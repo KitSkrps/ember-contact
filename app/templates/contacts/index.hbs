@@ -1,0 +1,10 @@
+
+<h2>List contact</h2>
+<ul>
+    {{#each model as |contact|}}
+    <li>{{#link-to 'contact' contact.id}}{{contact.firstname}}
+        {{/link-to}} || <button onclick={{action "deleteContact" contact}}>delete</button>
+    </li>
+    {{/each}}
+</ul>
+{{outlet}}

@@ -46,6 +46,9 @@ module.exports = function(environment) {
   if (environment === 'production') {
     // here you can enable a production-specific feature
   }
+  ENV['g-map'] = {
+    key: 'AIzaSyCMtJhsqW68lfaQQPp4Z38QOoGkPIIv-VY',
+  }
 
   return ENV;
 };
